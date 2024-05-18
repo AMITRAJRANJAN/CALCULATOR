@@ -1,0 +1,116 @@
+Dim X%, Y%, Z%
+Private Sub ADD_Click()
+X = SCREEN.Text
+SCREEN.Text = ""
+SUBT.Enabled = False
+MULT.Enabled = False
+DIV.Enabled = False
+End Sub
+
+Private Sub CLEAR_Click()
+SCREEN.Text = ""
+SUBT.Enabled = True
+MULT.Enabled = True
+ADD.Enabled = True
+DIV.Enabled = True
+
+End Sub
+
+Private Sub DIV_Click()
+X = SCREEN.Text
+SCREEN.Text = ""
+SUBT.Enabled = False
+MULT.Enabled = False
+ADD.Enabled = False
+End Sub
+
+Private Sub EIGHT_Click()
+SCREEN.Text = SCREEN.Text & 8
+End Sub
+
+Private Sub END_Click()
+End
+End Sub
+
+Private Sub EQU_Click()
+Y = SCREEN.Text
+SCREEN.Text = ""
+If ADD.Enabled = True Then
+    Z = X + Y
+    SCREEN.Text = Z
+End If
+
+If SUBT.Enabled = True Then
+    Z = X - Y
+    SCREEN.Text = Z
+End If
+
+If MULT.Enabled = True Then
+    Z = X * Y
+    SCREEN.Text = Z
+End If
+
+If DIV.Enabled = True Then
+    Z = X / Y
+    SCREEN.Text = Z
+End If
+
+SUBT.Enabled = True
+MULT.Enabled = True
+ADD.Enabled = True
+DIV.Enabled = True
+
+
+End Sub
+
+Private Sub FIVE_Click()
+SCREEN.Text = SCREEN.Text & 5
+End Sub
+
+Private Sub FOUR_Click()
+SCREEN.Text = SCREEN.Text & 4
+End Sub
+
+Private Sub MULT_Click()
+X = SCREEN.Text
+SCREEN.Text = ""
+SUBT.Enabled = False
+ADD.Enabled = False
+DIV.Enabled = False
+End Sub
+
+Private Sub NINE_Click()
+SCREEN.Text = SCREEN.Text & 9
+End Sub
+
+Private Sub ONE_Click()
+SCREEN.Text = SCREEN.Text & 1
+End Sub
+
+Private Sub SEVEN_Click()
+SCREEN.Text = SCREEN.Text & 7
+End Sub
+
+Private Sub SIX_Click()
+SCREEN.Text = SCREEN.Text & 6
+End Sub
+
+Private Sub SUBT_Click()
+X = SCREEN.Text
+SCREEN.Text = ""
+ADD.Enabled = False
+MULT.Enabled = False
+DIV.Enabled = False
+End Sub
+
+Private Sub THREE_Click()
+SCREEN.Text = SCREEN.Text & 3
+End Sub
+
+Private Sub TWO_Click()
+SCREEN.Text = SCREEN.Text & 2
+End Sub
+
+Private Sub ZERO_Click()
+SCREEN.Text = SCREEN.Text & 0
+End Sub
